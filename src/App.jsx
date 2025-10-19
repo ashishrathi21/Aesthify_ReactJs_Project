@@ -58,7 +58,7 @@ const App = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 bg-gray-50 h-full p-6 overflow-y-auto flex flex-col md:flex-col pb-20 md:pb-0">
+      <div className="flex-1 bg-gray-50 h-full p-3 overflow-y-auto flex flex-col md:flex-col pb-20 md:pb-0">
         {/* Search Input */}
         <div className="mb-4 flex items-center justify-center w-full">
           {/* Logo */}
@@ -85,7 +85,7 @@ const App = () => {
 
         {/* Images */}
         {fetchdata.length > 0 ? (
-          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-4 p-4">
+          <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-4 p-1">
             {fetchdata.map((items, idx) => (
               <div key={idx} className="mb-4 break-inside-avoid">
                 <img
