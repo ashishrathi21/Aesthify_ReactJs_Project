@@ -20,7 +20,7 @@ const App = () => {
     try {
       const url = searchInput
         ? `https://api.unsplash.com/search/photos?query=${searchInput}&client_id=7aNcVS1k9uxuk1yFn-c8B-zvY8xbQewtOZB57OJNKa8&per_page=12&page=${index}`
-        : `https://api.unsplash.com/photos?client_id=7aNcVS1k9uxuk1yFn-c8B-zvY8xbQewtOZB57OJNKa8&per_page=12&page=${index}`;
+        : `https://api.unsplash.com/photos/random?client_id=7aNcVS1k9uxuk1yFn-c8B-zvY8xbQewtOZB57OJNKa8&per_page=12&page=${index}`;
 
       const { data } = await axios.get(url);
       setFetchData(searchInput ? data.results : data);
